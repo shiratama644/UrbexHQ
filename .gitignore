@@ -1,0 +1,30 @@
+# Env / secrets
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Logs / temp（リポジトリ直下のみ。.agent/logs/ は実行記録として追跡する）
+*.log
+/logs/
+/tmp/
+/temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Agent personal overrides (official .claude/ equivalent)
+.agent/settings.local.json
+.claude/settings.local.json
+
+# Agent auto memory (if not committed)
+.agent/agent-memory/
+.claude/projects/
